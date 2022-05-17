@@ -1,5 +1,21 @@
 # Ender-5 Plus Configurations for Marlin Firmware for marlin 2.0.9.3
 
+### Benefits
+
+- set max hotend temp to 300 because the base hotend can handle this without problem.
+- enable and config PIDTEMPBED
+- increase max extrude lenght for longer bowden and filament change
+- modify Z offset to correct value
+- slow down the leveling and home Z speed ( the default is too fast for the machine )
+- enable Z_MIN_PROBE_REPEATABILITY_TEST
+- enable FILAMENT_RUNOUT_SCRIPT
+- always enable auto leveling after home
+- enable PREHEAT_BEFORE_LEVELING
+- enable HOTEND_IDLE_TIMEOUT
+- modify unload/load lenght to the real bowden lenght
+- modify ADVANCED_PAUSE_FEATURE settings, and now work perfectly with and without screen (octoprint) 
+- enable more M114 report options for octoprint
+
 ## Important
 
 NOTE: The Ender-5 LCD stock firmware is only compatible with Creality firmware. The LCD standard UI will not function. This is expected.
